@@ -18,17 +18,17 @@
 <body>
     <div id="navbar"></div>
 
-    <script>
-      // Fetch the navbar HTML and inject it into the page
+    <!-- <script>
+      
       fetch("../nav.html")
         .then(res => res.text())
         .then(data => {
           document.getElementById("navbar").innerHTML = data;
-          // Call the function to setup event listeners for the hamburger menu
+        
           setupNavbar();
         });
 
-      // Function to setup event listeners for the hamburger and dropdowns
+   
       function setupNavbar() {
         const hamburger = document.querySelector('.hamburger');
         const mobileMenu = document.querySelector('.mobile-menu');
@@ -50,7 +50,7 @@
           }
         });
       }
-    </script>
+    </script> -->
 
 
 <section class="contact-container">
@@ -101,7 +101,7 @@
         <button type="submit" class="form-button" >Send Message</button>
       </form>
     </div>
-    <script>
+    <!-- <script>
       document.getElementById("contact-form").addEventListener("submit", function (e) {
         e.preventDefault();
     
@@ -125,7 +125,7 @@
             alert("Something went wrong. Please try again.");
           });
       });
-    </script>
+    </script> -->
   </section>
   </section>
 
